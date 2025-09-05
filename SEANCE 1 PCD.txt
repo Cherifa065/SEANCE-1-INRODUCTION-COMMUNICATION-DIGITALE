@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger la présentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .step {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background: #e17055;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #00b894, #00a085);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .code-instruction {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            color: #495057;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .platform-option {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .platform-option h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📁 Guide Complet : Télécharger et Héberger votre Présentation</h1>
+        
+        <div class="warning">
+            <strong>🎯 Objectif :</strong> Obtenir une URL accessible pour utiliser votre présentation dans un iframe
+        </div>
+        
+        <h2>📥 Étape 1 : Télécharger votre présentation</h2>
+        
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <strong>Sélectionnez tout le code HTML</strong><br>
+                Revenez à la présentation que j'ai créée, faites Ctrl+A pour tout sélectionner, puis Ctrl+C pour copier
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">2</div>
+            <div>
+                <strong>Ouvrez un éditeur de texte</strong><br>
+                • Windows : Bloc-notes (Notepad)<br>
+                • Mac : TextEdit<br>
+                • Ou téléchargez <strong>Notepad++</strong> (recommandé)
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">3</div>
+            <div>
+                <strong>Collez et sauvegardez</strong><br>
+                • Collez le code (Ctrl+V)<br>
+                • Fichier → Enregistrer sous<br>
+                • <strong>Nom :</strong> <code>index.html</code><br>
+                • <strong>Type :</strong> "Tous les fichiers" (pas .txt !)
+            </div>
+        </div>
+        
+        <div class="success">
+            ✅ <strong>Vous avez maintenant :</strong> Un fichier <code>index.html</code> contenant votre présentation complète
+        </div>
+        
+        <h2>🌐 Étape 2 : Héberger en ligne (Choisissez UNE méthode)</h2>
+        
+        <div class="platform-option">
+            <h3>🌟 Option A : GitHub Pages (Recommandée - Gratuit)</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Créer un compte</strong><br>
+                    Allez sur <a href="https://github.com" target="_blank">github.com</a> → Sign up → Compte gratuit
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Nouveau repository</strong><br>
+                    Cliquez "New" → Nom : <code>ma-presentation</code> → Public ✅ → Create
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>Upload du fichier</strong><br>
+                    "Add file" → "Upload files" → Glissez votre <code>index.html</code> → Commit
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                    <strong>Activer Pages</strong><br>
+                    Settings → Pages → Source: "Deploy from branch" → main → Save
+                </div>
+            </div>
+            
+            <div class="success">
+                <strong>🎉 URL obtenue :</strong> <code>https://votrenom.github.io/ma-presentation</code>
+            </div>
+        </div>
+        
+        <div class="platform-option">
+            <h3>⚡ Option B : Netlify (Ultra-simple)</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Aller sur Netlify</strong><br>
+                    Visitez <a href="https://netlify.app" target="_blank">netlify.app</a>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Drag & Drop</strong><br>
+                    Glissez directement votre fichier <code>index.html</code> dans la zone de dépôt
+                </div>
+            </div>
+            
+            <div class="success">
+                <strong>🎉 URL générée instantanément :</strong> <code>https://random-name-123.netlify.app</code>
+            </div>
+        </div>
+        
+        <div class="platform-option">
+            <h3>🎨 Option C : CodePen</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Créer un compte</strong><br>
+                    <a href="https://codepen.io" target="_blank">codepen.io</a> → Sign Up
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Nouveau Pen</strong><br>
+                    "Create" → "Pen" → Collez tout le code HTML dans la section HTML
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>Partager</strong><br>
+                    "Save" → Récupérez l'URL de partage
+                </div>
+            </div>
+        </div>
+        
+        <h2>📋 Étape 3 : Utiliser l'iframe</h2>
+        
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <strong>Copiez votre URL obtenue</strong><br>
+                Exemple : <code>https://prof-martin.github.io/ma-presentation</code>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">2</div>
+            <div>
+                <strong>Utilisez ce code iframe</strong><br>
+                <div class="code-instruction">
+&lt;iframe 
+    src="VOTRE-URL-ICI" 
+    width="100%" 
+    height="700px" 
+    frameborder="0"
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+                </div>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">3</div>
+            <div>
+                <strong>Intégrez où vous voulez :</strong><br>
+                • PowerPoint (complément Web Viewer)<br>
+                • Moodle (éditeur HTML)<br>
+                • Google Sites (Insérer → Intégrer)<br>
+                • Site web personnel<br>
+                • WordPress (bloc HTML)
+            </div>
+        </div>
+        
+        <h2>🔧 Test rapide</h2>
+        
+        <div class="warning">
+            <strong>⚠️ Vérifiez :</strong> Ouvrez votre URL dans un navigateur. Si vous voyez votre présentation, c'est bon !
+        </div>
+        
+        <div class="success">
+            <strong>🎯 Mission accomplie !</strong> Vos étudiants pourront maintenant voir votre présentation interactive via l'iframe sur n'importe quelle plateforme !
+        </div>
+        
+        <h2>💡 Conseils bonus</h2>
+        
+        <div class="platform-option">
+            <h3>Pour PowerPoint :</h3>
+            <p>Insertion → Mes compléments → Rechercher "Web Viewer" → Coller votre URL</p>
+        </div>
+        
+        <div class="platform-option">
+            <h3>Pour Moodle :</h3>
+            <p>Éditeur de texte → Clic sur &lt;/&gt; (HTML) → Coller le code iframe</p>
+        </div>
+        
+        <div class="platform-option">
+            <h3>URL personnalisée :</h3>
+            <p>Sur GitHub, vous pouvez renommer votre repository pour avoir : <br>
+            <code>https://votrenom.github.io/communication-digitale</code></p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <strong>🎉 Félicitations ! Votre présentation est maintenant prête à être partagée partout !</strong>
+        </div>
+    </div>
+</body>
+</html>
